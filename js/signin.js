@@ -5,7 +5,9 @@ const passwordInput = document.getElementById("input-password");
 
 document.getElementById("sign-in-button").addEventListener("click", function () {
   if (userNameInput.value === validUserName && passwordInput.value === validPassword) {
+
     window.location.href = "all.html";
+    
   } 
   else {
     userNameInput.value = "";
