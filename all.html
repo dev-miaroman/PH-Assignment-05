@@ -33,6 +33,47 @@
         </div>
     </div>
 
+    <!-- All, Open , Closed Button Section-->
+    <section class="bg-[#F8FAFC] py-10">
+        <div class="bg-white w-11/12 mx-auto rounded-lg shadow-sm">
+            <div id="tab-buttons" class="flex items-center justify-start gap-2.5 p-4 md:p-6">
+                <button onclick="activeTabButton('all-issues-btn')" id="all-issues-btn" class="tab-button py-1.5 px-2.5 font-semibold border-2 border-indigo-300 bg-indigo-700 text-white hover:bg-[#4A00FF]-800 rounded w-32">All</button>
+                <button onclick="activeTabButton('open-issues-btn')" id="open-issues-btn" class="tab-button py-1.5 px-2.5 font-semibold border-2 border-gray-300 text-gray-500 hover:bg-[#FFFFFF]-200 rounded w-32">Open</button>
+                <button onclick="activeTabButton('closed-issues-btn')" id="closed-issues-btn" class="tab-button py-1.5 px-2.5 font-semibold border-2 border-gray-300 text-gray-500 hover:bg-[#FFFFFF]-200 rounded w-32">Closed</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-white w-11/12 mx-auto rounded-lg shadow-md mb-10">
+
+      <!-- Issue Section-->
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between border-b-2 border-gray-200 md:gap-3 gap-0">
+        <div class="flex items-center justify-start gap-2 md:gap-2.5 p-4 md:p-6 w-full sm:w-auto">
+            <img class="p-2 sm:p-2.5 bg-indigo-100 rounded-full w-10 h-10 sm:w-auto sm:h-auto" src="./assets/Aperture.png" alt="Aperture Logo">
+            <div>
+                <h1 id="issues-count" class="text-base sm:text-lg md:text-xl font-semibold">50 Issues</h1>
+                <p class="text-gray-500 text-xs sm:text-sm md:text-base">Track and manage your project issues</p>
+            </div>
+        </div>
+        <div class="flex items-center justify-start sm:justify-between gap-4 sm:gap-5 px-4 pb-4 sm:p-5 md:p-6 w-full sm:w-auto">
+          <div class="flex items-center gap-1.5 sm:gap-2 font-medium text-sm sm:text-base">
+                <i class="fa-solid fa-circle text-green-500 text-xs sm:text-sm"></i>
+                <p>Open</p>
+          </div>
+          <div class="flex items-center gap-1.5 sm:gap-2 font-medium text-sm sm:text-base">
+                <i class="fa-solid fa-circle text-purple-500 text-xs sm:text-sm"></i>
+                <p>Closed</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Issue Card Section  -->
+      <div class="p-4 md:p-6">
+            <div id="issue-card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+            <!-- Loading Section -->
+            <div id="loading-bars" class="flex items-center justify-center"><span class="loading loading-bars loading-xl bg-primary"></span></div>
+      </div>
+
     <!-- JavaScript Link -->
   <script src="./js/all.js"></script>
 </body>
