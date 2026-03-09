@@ -6,6 +6,61 @@
     <title>Assignment-05(GitHub Tracker)</title>
 </head>
 <body>
-    
+    <!-- Login Section -->
+    <section class="bg-base-200 flex items-center justify-center min-h-screen">
+        <fieldset class="fieldset bg-base-100 border-base-300 rounded-box w-lg border p-8 shadow-md">
+            <div class="flex flex-col items-center justify-center space-y-2.5 mb-2.5">
+                <div class="text-center space-y-1">
+                    <h2 class="text-2xl font-semibold">GitHub Issues Tracker</h2>
+                    <p class="text-base-content/50 font-medium">Sign in to manage your issues</p>
+                </div>
+            </div>
+
+            <label class="label font-semibold text-gray-950">Username</label>
+            <input id="input-userName" type="text" class="input rounded-lg w-full" placeholder="Enter Username" />
+            <span class="text-purple-500 mb-2.5">Default: admin</span>
+
+            <label class="label font-semibold text-gray-950">Password</label>
+            <input id="input-password" type="password" class="input rounded-lg w-full" placeholder="Enter Password" />
+            <span class="text-purple-500">Default: admin123</span>
+
+            <button id="sign-in-button" class="btn btn-primary rounded-lg mt-4">Sign In</button>
+            <div class="divider font-medium"> OR </div>
+            <p class="text-base-content/50 font-medium text-center">Demo Credentials:</p>
+
+            <div class="bg-base-200 p-6 text-center rounded-lg">
+                <p><span class="font-bold">Username:</span> admin</p>
+                <p><span class="font-bold">Password:</span> admin123</p>
+            </div>
+        </fieldset>
+    </section>
+    <!--  SignIn Modal Section -->
+    <dialog id="signInModal" class="modal">
+        <div class="modal-box max-w-md">
+        
+            <div class="space-y-2">
+                <div class="flex items-center justify-left gap-2">
+                    <i class="fa-duotone fa-solid fa-circle-exclamation text-error text-3xl"></i>
+                    <h3 class="font-bold text-lg text-error">Failed</h3>
+                </div>
+
+                <p class="py-3 font-semibold text-lg text-base-content/70 text-left">GitHub Issues Tracker</p>
+                
+                <div class="bg-error/10 border border-error/30 rounded-lg p-3">
+                    <p id="error-message" class="text-sm text-error font-medium text-left">Invalid results</p>
+                </div>
+            </div>
+
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn btn-soft btn-error">Close</button>
+                </form>
+            </div>
+
+        </div>
+    </dialog>
+
+  <!-- JavaScript link -->
+  <script src="./js/signin.js"></script>
 </body>
 </html>
