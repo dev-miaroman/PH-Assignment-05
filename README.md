@@ -84,70 +84,72 @@
 - Implement Search Functionality and 8 meaningful github commit.  
 
 - Create a readme file and answer this question on your own. Don’t copy-paste from Google or any AI chatbot. 
-1️⃣ What is the difference between var, let, and const?
-Answer: 
-Var: var is used to declare a variable that is function-scoped and can be redeclared and reassigned.Example-
-	    var x = 1;
-	    var x = 2;   // Redeclaration allowed
-	    x = 3;       // Reassignment allowed
-	    console.log(x); // 3
 
-let: let is used to declare a block-scoped variable that can be reassigned but cannot be redeclared in the same scope.Example-
-	  let y = 1;
-	  y = 2; // Reassignment allowed
-	  console.log(y); // 2
+
+1️⃣ What is the difference between var, let, and const?
+- Answer: 
+- Var: var is used to declare a variable that is function-scoped and can be redeclared and reassigned.Example-
+-	    var x = 1;
+-	    var x = 2;   // Redeclaration allowed
+-	    x = 3;       // Reassignment allowed
+-	    console.log(x); // 3
+
+- let: let is used to declare a block-scoped variable that can be reassigned but cannot be redeclared in the same scope.-Example-
+-	  let y = 1;
+-	  y = 2; // Reassignment allowed
+-	  console.log(y); // 2
 	
-const:const is used to declare a block-scoped variable whose value cannot be reassigned after initialization.Example-
-	  const z = 1;
-	  // z = 2; // Error (cannot reassign)
-	  console.log(z); // 1
+- const:const is used to declare a block-scoped variable whose value cannot be reassigned after initialization.Example-
+-	  const z = 1;
+-	  // z = 2; // Error (cannot reassign)
+-	  console.log(z); // 1
 
 
 2️⃣ What is the spread operator (...)?
-Answer:
-The Spread Operator (...) is used to expand or unpack elements of an array, object, or iterable into individual elements.Example-
-	  const numbers = [1, 2, 3];
-	  const newNumbers = [...numbers, 4, 5];
-	  console.log(newNumbers); // [1, 2, 3, 4, 5]
+- Answer:
+- The Spread Operator (...) is used to expand or unpack elements of an array, object, or iterable into individual elements.Example-
+-	  const numbers = [1, 2, 3];
+-	  const newNumbers = [...numbers, 4, 5];
+-	  console.log(newNumbers); // [1, 2, 3, 4, 5]
 
 
 3️⃣ What is the difference between map(), filter(), and forEach()?
-Answer:
-map(): map() creates a new array by applying a function to every element in the original array. It "maps" each old value to a new value.Example-
-	  const numbers = [1, 2, 3, 4];
-	  const doubled = numbers.map(num => num * 2);
-	  console.log(doubled); // [2, 4, 6, 8]
+- Answer:
+- map(): map() creates a new array by applying a function to every element in the original array. It "maps" each old value to a new value.Example-
+-	  const numbers = [1, 2, 3, 4];
+-	  const doubled = numbers.map(num => num * 2);
+-	  console.log(doubled); // [2, 4, 6, 8]
 
-filter(): filter() creates a new array containing only the elements that pass a specific "test" (a condition that returns true).Example-
+- filter(): filter() creates a new array containing only the elements that pass a specific "test" (a condition that returns true).Example-
 	  const numbers = [1, 2, 3, 4, 5];
 	  const evenNumbers = numbers.filter(num => num % 2 === 0);
 	  console.log(evenNumbers);// [2, 4]
 
-forEach(): forEach() executes a provided function once for each array element. It is used when we want to do something but we don't need to create a new array. Example-
-	  const numbers = [1, 2, 3];
-	  numbers.forEach(num => {
-  	console.log(num * 2); 
-	}); //2 //4 //6
+-forEach(): forEach() executes a provided function once for each array element. It is used when we want to do something but we don't need to create a new array. Example-
+-	  const numbers = [1, 2, 3];
+-	  numbers.forEach(num => {
+-  	console.log(num * 2); 
+-	}); //2 //4 //6
 
 4️⃣ What is an arrow function?
-Answer:
-An Arrow Function is a shorter and cleaner way to write functions in JavaScript. It was introduced in ES6 (ECMAScript 2015) and we uses the => (arrow) syntax. Example-
-	  function add(a, b) {
-  	  return a + b;
-	  }
-Arrow Function:
-	  const add = (a, b) => {
-  	return a + b;
-	};
-	  console.log(add(3, 4)); // 7
+- Answer:
+- An Arrow Function is a shorter and cleaner way to write functions in JavaScript. It was introduced in ES6 (ECMAScript 2015) and we uses the => (arrow) syntax. Example-
+-	  function add(a, b) {
+- 	  return a + b;
+-	  }
+- Arrow Function:
+-	  const add = (a, b) => {
+-  	return a + b;
+-	};
+-	  console.log(add(3, 4)); // 7
 
 
 5️⃣ What are template literals?
-Answer: 
-Template literals are a modern way to work with strings in JavaScript, introduced in ES6. They offer more flexibility than traditional strings wrapped in single (' ') or double (" ") quotes and create a template literal, we use backticks (`) instead of quotes.They allow embedding variables and expressions inside a string using ${}. Example-
-	const name = "Roman";
-	const message = `Hello ${name}`;
-	console.log(message);// Hello Roman
+- Answer: 
+- Template literals are a modern way to work with strings in JavaScript, introduced in ES6. They offer more flexibility than traditional strings wrapped in single (' ') or double (" ") quotes and create a template literal, we use backticks (`) instead of quotes.They allow embedding variables and expressions inside a string using ${}. Example-
+-	const name = "Roman";
+-	const message = `Hello ${name}`;
+-	console.log(message);// Hello Roman
 
 
 
